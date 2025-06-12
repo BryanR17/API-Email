@@ -21,9 +21,7 @@ def enviar():
     # Email config
     remetente = 'rodeksolucaoemti@gmail.com'
     senha = 'cloc urzk mrew ibkg'
-    destinatario = ['bryanrodrigues3002@gmail.com', 'kiyoshicloud01@gmail.com', 
-                    'rodeksolucaoemti@gmail.com', 'kaiovrocha14@gmail.com',
-                    'kaiovrocha@gmail.com', 'deividduck07@gmail.com']
+    destinatario = ['bryanrodrigues3002@gmail.com', 'paulianecardoso@gmail.com']
 
     conteudo = f"""
     Novo formulário recebido:
