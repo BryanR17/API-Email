@@ -1,3 +1,15 @@
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import smtplib
+from email.message import EmailMessage
+
+app = Flask(__name__)
+CORS(app)  # Liberar requisições externas (ex: do frontend da Hostinger)
+
+@app.route('/')
+def home():
+    return jsonify({'message': 'API da Rodek está online'})
+
 @app.route('/enviar', methods=['POST'])
 def enviar():
     try:
