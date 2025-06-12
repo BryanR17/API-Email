@@ -24,7 +24,7 @@ def enviar():
 
         # Configuração do e-mail
         remetente = 'rodeksolucaoemti@gmail.com'
-        senha = 'cloc urzk mrew ibkg'
+        senha = 'ehcx ybvs thup yzae'
         destinatario = ['bryanrodrigues3002@gmail.com', 'paulianecardoso@gmail.com']
 
         conteudo = f"""
