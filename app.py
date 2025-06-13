@@ -4,11 +4,11 @@ import smtplib
 from email.message import EmailMessage
 
 app = Flask(__name__)
-CORS(app)  # Liberar requisições externas (ex: do frontend da Hostinger)
+CORS(app)  
 
 @app.route('/')
 def home():
-    return jsonify({'message': 'API da Rodek está online'})
+    return jsonify({'message': 'API Está online'})
 
 @app.route('/enviar', methods=['POST'])
 def enviar():
@@ -23,9 +23,9 @@ def enviar():
         mensagem = data.get('mensagem')
 
         # Configuração do e-mail
-        remetente = 'rodeksolucaoemti@gmail.com'
-        senha = 'ehcx ybvs thup yzae'
-        destinatario = ['bryanrodrigues3002@gmail.com', 'paulianecardoso@gmail.com']
+        remetente = 'email_que_enviara_o_email@gmail.com'
+        senha = 'chave de dois fatores'
+        destinatario = ['email_para_qual_vai_chegar_o_email@gmaul.com']
 
         conteudo = f"""
         Novo formulário recebido:
